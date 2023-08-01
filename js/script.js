@@ -169,4 +169,45 @@ const ages = [33, 12, 20, 16, 21, 34, 44, 55];
 // const numbers = [1, 2, 3, 4];
 // const doubledNumbers = numbers.map(number => number * 2);
 // console.log(doubledNumbers); 
-// console.log(numbers); 
+// console.log(numbers);
+
+
+// // Higher-order function: Funksiyalarni argument sifatida qabul qiladi
+// function performOperation(x, y, operation) {
+//   return operation(x, y);
+// }
+
+// // Higher-order function: Funksiyani qaytaradi
+// function createMultiplier(factor) {
+//   return function(x) {
+//     return x * factor;
+//   };
+// }
+
+// // Higher-order function: Funksiyani argument sifatida qabul qiladi
+// function sayHello(name) {
+//   return function() {
+//     console.log(`Salom, ${name}!`);
+//   };
+// }
+
+
+// const childName = "Ali";
+
+
+// const add = (a, b) => a + b;
+// const multiply = (a, b) => a * b;
+
+
+// console.log(performOperation(5, 3, add)); // Chiqarish: 8
+// console.log(performOperation(5, 3, multiply)); // Chiqarish: 15
+
+// const double = createMultiplier(2);
+// const triple = createMultiplier(3);
+
+// console.log(double(5)); // Chiqarish: 10
+// console.log(triple(5)); // Chiqarish: 15
+
+
+// const greetChild = sayHello(childName);
+// greetChild(); // Chiqarish: Salom, Ali!
